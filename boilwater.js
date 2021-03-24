@@ -6,7 +6,6 @@
 function boilWater(minutes){
     console.log("Boil water for", minutes ,"minutes")
 }
-
 module.exports = {
     boilWater
 }

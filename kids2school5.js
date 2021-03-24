@@ -9,14 +9,12 @@
 /****************************************************************/ 
 /* require function for makebreakfast.js  */ 
 /**************************************************************/
+const { setAlarm} = require('./setalarm')
 
 const {
     breakfastReady,
     makeBreakfast
 } = require('./makebreakfast')
-
-
-const { setAlarm} = require('./setalarm')
 
 function cleanYourself(){
     console.log("Brush teeth, have a wash, change clothes")
@@ -42,8 +40,6 @@ function sayGoodbye(){
     console.log("Goodbye, have a good one & see you later")
 }
 
-
-// console.log("Start")
 function kidsToSchool(canEveryoneGetUp, isBreakfastReady, areTheyLate){
     console.log("Start")    
     if (!canEveryoneGetUp){
