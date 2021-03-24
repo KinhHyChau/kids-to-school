@@ -11,11 +11,6 @@
 /**************************************************************/
 
 const {
-    // prepareIngredients,
-    // boilWater,
-    // mixIngredientsWithBoilingWater,
-    // setStove,
-    // waitForCook,
     breakfastReady,
     makeBreakfast
 } = require('./makebreakfast')
