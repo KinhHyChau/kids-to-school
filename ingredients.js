@@ -21,11 +21,11 @@ const ingredients = [
     },
 ]
 
-const mealPick = function (array){
+const getRandomMealPick = function (array){
     const randomIndex = Math.floor(Math.random() * array.length);
     return array[randomIndex];
 }
-const randomMealPick = mealPick(ingredients);
+const randomMealPick = getRandomMealPick(ingredients);
 
 console.log(`first item: ${ingredients[2].main}, ${ingredients[0].side2}`)
 
