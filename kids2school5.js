@@ -1,4 +1,14 @@
-// Expand makeBreakfast sub-process
+/***************************************************/ 
+/* Expand makeBreakfast sub-process               */ 
+/*************************************************/ 
+
+/***********************************************************/ 
+/* require function for setalarm.js  */ 
+/*********************************************************/
+
+/****************************************************************/ 
+/* require function for makebreakfast.js  */ 
+/**************************************************************/
 
 const {
     prepareIngredients,
@@ -8,17 +18,13 @@ const {
     waitForCook,
     breakfastReady,
     makeBreakfast
-} = require('./makeBreakfast')
+} = require('./makebreakfast')
 
-const { setAlarm} = require('./setAlarm')
-
-//--------Extract function with module.exports for setAlarm.js--------
+const { setAlarm} = require('./setalarm')
 
 function cleanYourself(){
     console.log("Brush teeth, have a wash, change clothes")
 }
-//------Extract function with module.exports for makeBreakfast.js------
-
 
 function finishBreakfast(){
     console.log("Finish breakfast")
@@ -67,11 +73,14 @@ function kidsToSchool(canEveryoneGetUp, isBreakfastReady, areTheyLate){
 // console.log("Getup in time and breakfast ready and late")
 // kidsToSchool(true, true, true)
 
-// console.log("Getup not in time and breakfast not ready and not late")
-// kidsToSchool(false, false, false)
-
 // console.log("Getup in time and breakfast ready and no late")
 // kidsToSchool(true, true, false)
+
+// console.log("Getup in time and breakfast not ready and no late")
+// kidsToSchool(true, false, false)
+
+// console.log("Getup not in time and breakfast not ready and not late")
+// kidsToSchool(false, false, false)
 
 // console.log("Getup in time and breakfast not ready and late")
 // kidsToSchool(true, false, true)

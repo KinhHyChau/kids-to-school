@@ -1,8 +1,15 @@
 
-//------------------ Below is function of makeBreakfast subprocesses and separate from the main js -------------//
-function prepareIngredients(){
-    console.log("All ingredients are ready")
-}
+/**************************************************************/ 
+/*Below is function of makeBreakfast subprocesses, use       */ 
+/*module.exports to separate from the main kids2school5.js  */
+/***********************************************************/ 
+
+
+/****************************************************************/ 
+/* require function for prepareIngredients                     */ 
+/**************************************************************/
+
+const { prepareIngredients} = require('./randompickingredients')
 
 function boilWater(){
     console.log("Boil water")

@@ -1,4 +1,7 @@
-//-----Here's the separating file of setAlarm function from main js---//
+/***************************************************/ 
+/*Use module.exports to separate setAlarm function*/ 
+/*from main kids2school5.js                      */
+/************************************************/ 
 
 function setAlarm(minutes){
     console.log("Sleep for", minutes, "minutes more")
