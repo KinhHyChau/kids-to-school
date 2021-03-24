@@ -11,11 +11,11 @@
 /**************************************************************/
 
 const {
-    prepareIngredients,
-    boilWater,
-    mixIngredientsWithBoilingWater,
-    setStove,
-    waitForCook,
+    // prepareIngredients,
+    // boilWater,
+    // mixIngredientsWithBoilingWater,
+    // setStove,
+    // waitForCook,
     breakfastReady,
     makeBreakfast
 } = require('./makebreakfast')
@@ -47,8 +47,10 @@ function sayGoodbye(){
     console.log("Goodbye, have a good one & see you later")
 }
 
-console.log("Start")
+
+// console.log("Start")
 function kidsToSchool(canEveryoneGetUp, isBreakfastReady, areTheyLate){
+    console.log("Start")    
     if (!canEveryoneGetUp){
         setAlarm(10)
     }
