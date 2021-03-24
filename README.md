@@ -1,4 +1,5 @@
-# kids-to-school
+# kids-to-school --> kids2school5.js is the main file to run.
+
 Use function, require, module.exports, separating files.
 Use  const randomIndex = Math.floor(Math.random() * array.length) 
 to random pick ingredients in an array.

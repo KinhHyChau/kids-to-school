@@ -20,6 +20,7 @@ const {
     makeBreakfast
 } = require('./makebreakfast')
 
+
 const { setAlarm} = require('./setalarm')
 
 function cleanYourself(){
@@ -70,20 +71,20 @@ function kidsToSchool(canEveryoneGetUp, isBreakfastReady, areTheyLate){
     sayGoodbye()
     console.log("End")
 }
-// console.log("Getup in time and breakfast ready and late")
-// kidsToSchool(true, true, true)
+console.log("Getup in time and breakfast ready and late")
+kidsToSchool(true, true, true)
 
-// console.log("Getup in time and breakfast ready and no late")
-// kidsToSchool(true, true, false)
+console.log("Getup in time and breakfast ready and no late")
+kidsToSchool(true, true, false)
 
-// console.log("Getup in time and breakfast not ready and no late")
-// kidsToSchool(true, false, false)
+console.log("Getup in time and breakfast not ready and no late")
+kidsToSchool(true, false, false)
 
-// console.log("Getup not in time and breakfast not ready and not late")
-// kidsToSchool(false, false, false)
+console.log("Getup not in time and breakfast not ready and not late")
+kidsToSchool(false, false, false)
 
-// console.log("Getup in time and breakfast not ready and late")
-// kidsToSchool(true, false, true)
+console.log("Getup in time and breakfast not ready and late")
+kidsToSchool(true, false, true)
 
 console.log("Getup not in time and breakfast not ready and late")
 kidsToSchool(false, false, true)
