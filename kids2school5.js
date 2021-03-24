@@ -12,12 +12,12 @@ const {
 
 const { setAlarm} = require('./setAlarm')
 
-//------------Extract function with module.exports for setAlarm.js----------------
+//--------Extract function with module.exports for setAlarm.js--------
 
 function cleanYourself(){
     console.log("Brush teeth, have a wash, change clothes")
 }
-//------------Extract function with module.exports for makeBreakfast.js----------------
+//------Extract function with module.exports for makeBreakfast.js------
 
 
 function finishBreakfast(){
