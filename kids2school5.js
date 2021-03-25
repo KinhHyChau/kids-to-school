@@ -24,8 +24,8 @@ function finishBreakfast(){
     console.log("Finish breakfast")
 }
 
-function warmUpCar(){
-    console.log("Warm up car")
+function warmUpCar(minutes){
+    console.log("Warm up car for", minutes, "minutes")
 }
 
 function driveKidsToSchool(){
@@ -41,6 +41,8 @@ function sayGoodbye(){
 }
 
 function kidsToSchool(canEveryoneGetUp, isBreakfastReady, areTheyLate){
+    let areAllIngredientsReady = false;
+    let isWaterBoiled = false;
     console.log("Start")    
     if (!canEveryoneGetUp){
         setAlarm(10)
@@ -48,13 +50,13 @@ function kidsToSchool(canEveryoneGetUp, isBreakfastReady, areTheyLate){
     cleanYourself()
 
     if (!isBreakfastReady){
-       makeBreakfast(false, false)
+       makeBreakfast(areAllIngredientsReady, isWaterBoiled)
     } else {
         breakfastReady()
     }
     finishBreakfast()    
 
-    warmUpCar()
+    warmUpCar(3)
    
     driveKidsToSchool()
    

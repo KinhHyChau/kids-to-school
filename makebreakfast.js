@@ -11,7 +11,7 @@
 
 const { prepareIngredients} = require('./randompickingredients')
 
-const {boilWater} = require('./boilwater')
+const {boilWater} = require('./setalarm')
 
 function mixIngredientsWithBoilingWater(){
     console.log("Mix ingredients into boiling water pot")
